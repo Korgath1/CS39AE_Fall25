@@ -17,7 +17,7 @@ FUN_FACTS = [
     "I’m learning about data visualization, algorithms, and real analysis right now",
     "I want to build a 3-D renderer",
 ]
-PHOTO_PATH = "assets/BioDataVis.webp"  # Put a file in repo root or set a URL
+PHOTO_PATH = "BioDataVis.webp"  # Put a file in repo root or set a URL
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")
