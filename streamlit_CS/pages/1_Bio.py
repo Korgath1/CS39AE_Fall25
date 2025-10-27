@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 
 st.title("👋 My Bio")
@@ -17,7 +18,10 @@ FUN_FACTS = [
     "I’m learning about data visualization, algorithms, and real analysis right now",
     "I want to build a 3-D renderer",
 ]
-PHOTO_PATH = "BioDataVis.webp"  # Put a file in repo root or set a URL
+
+PHOTO_PATH = os.path.join(os.path.dirname(__file__), "..", "BioDataVis.webp")
+PHOTO_PATH = os.path.abspath(PHOTO_PATH)
+#PHOTO_PATH = "BioDataVis.webp"  # Put a file in repo root or set a URL
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")

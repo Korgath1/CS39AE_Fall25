@@ -6,8 +6,9 @@ import os
 st.title("📊 Interactive Pie Chart")
 
 # ---------- Check CSV file ----------
-csv_path = "data/pie_demo.csv"
+csv_path = os.path.join(os.path.dirname(__file__), "..", "data", "pie_demo.csv")
 st.write("Looking for CSV at:", os.path.abspath(csv_path))
+st.write("Exists:", os.path.exists(csv_path))
 
 if not os.path.exists(csv_path):
     st.error("CSV file not found! Please make sure 'data/pie_demo.csv' exists.")
